@@ -5,16 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Applications\Events\" />
-    <Folder Include="Applications\EventHandlers\" />
-    <Folder Include="Applications\Commands\" />
-    <Folder Include="Applications\CommandHandlers\" />
-    <Folder Include="Applications\Queries\" />
     <Folder Include="Domain\Enums\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="MediatR" Version="8.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.29" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.29" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.29">

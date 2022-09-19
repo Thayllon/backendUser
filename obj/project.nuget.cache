@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "mGoYzV9c39akQNs4gepkD1hxo88jOPg9H5vZLSlLa0ShG38E8tLR2NQIz3QUJz9UBZJ2jIqZ+u/gD515n40PDQ==",
+  "dgSpecHash": "mIS4Yuc5zFV0HnAL9XW1aD8ZtfL2x+KMLSe7ckLiBL31D28CmVyn9E6ywVGolwRrnMuGvgj7Zy98X1Fz6hawNw==",
   "success": true,
-  "projectFilePath": "D:\\C#\\backend\\Backend.csproj",
+  "projectFilePath": "C:\\Users\\Gomes\\source\\repos\\backend\\Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gomes\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
+    "C:\\Users\\Gomes\\.nuget\\packages\\mediatr\\8.1.0\\mediatr.8.1.0.nupkg.sha512",
     "C:\\Users\\Gomes\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.29\\microsoft.aspnetcore.jsonpatch.3.1.29.nupkg.sha512",
     "C:\\Users\\Gomes\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.29\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.29.nupkg.sha512",
     "C:\\Users\\Gomes\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

@@ -32,7 +32,7 @@ namespace Backend.Data.Repositories
             {
                 if (usuario.Escolaridade.Trim() == "Infantil" || usuario.Escolaridade.Trim() == "Fundamental" || usuario.Escolaridade.Trim() == "Médio" || usuario.Escolaridade.Trim() == "Superior")
                 {
-                    _context.Usuarios.Add(usuario);
+                     _context.Usuarios.Add(usuario);
 
                     await _context.SaveChangesAsync();
 

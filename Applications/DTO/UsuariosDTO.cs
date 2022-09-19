@@ -1,23 +1,37 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using Backend.Domain.Models;
+using System;
 
 namespace Backend.Applications.DTO
 {
     public class UsuariosDTO
     {
-        [Required(ErrorMessage = "Campo obrigatório")]
+        public int Id { get; set; }
         public string Nome { get; set; }
 
-        [Required(ErrorMessage = "Campo obrigatório")]
         public string Sobrenome { get; set; }
 
-        [EmailAddress(ErrorMessage = "Endereço de email inválido")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Campo obrigatório")]
         public DateTime DataNascimento { get; set; }
 
-        [Required(ErrorMessage = "Campo obrigatório")]
         public string Escolaridade { get; set; }
+
+        public static UsuariosDTO UsuarioDTO(Usuarios usuarios)
+        {
+            if (usuarios == null)
+                return null;
+
+            var usuariosDTO = new UsuariosDTO
+            {
+                Id = usuarios.Id,
+                Nome = usuarios.Nome,
+                Sobrenome = usuarios.Sobrenome,
+                Email = usuarios.Email,
+                DataNascimento = usuarios.DataNascimento,
+                Escolaridade = usuarios.Escolaridade,
+            };
+
+            return usuariosDTO;
+        }
     }
 }

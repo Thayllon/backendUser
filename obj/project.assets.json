@@ -15,6 +15,15 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
+      "MediatR/8.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.JsonPatch/3.1.29": {
         "type": "package",
         "dependencies": {
@@ -1528,6 +1537,24 @@
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "MediatR/8.1.0": {
+      "sha512": "KJFnA0MV83bNOhvYbjIX1iDykhwFXoQu0KV7E1SVbNA/CmO2I7SAm2Baly0eS7VJ2GwlmStLajBfeiNgTpvYzQ==",
+      "type": "package",
+      "path": "mediatr/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.dll",
+        "lib/net461/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.8.1.0.nupkg.sha512",
+        "mediatr.nuspec"
       ]
     },
     "Microsoft.AspNetCore.JsonPatch/3.1.29": {
@@ -5847,6 +5874,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper >= 8.1.1",
+      "MediatR >= 8.1.0",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.1.29",
       "Microsoft.EntityFrameworkCore >= 3.1.29",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.29",
@@ -5862,11 +5890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\backend\\Backend.csproj",
+      "projectUniqueName": "C:\\Users\\Gomes\\source\\repos\\backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "D:\\C#\\backend\\Backend.csproj",
+      "projectPath": "C:\\Users\\Gomes\\source\\repos\\backend\\Backend.csproj",
       "packagesPath": "C:\\Users\\Gomes\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\backend\\obj\\",
+      "outputPath": "C:\\Users\\Gomes\\source\\repos\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5902,6 +5930,10 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[8.1.1, )"
+          },
+          "MediatR": {
+            "target": "Package",
+            "version": "[8.1.0, )"
           },
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",

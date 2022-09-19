@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\backend\\Backend.csproj": {}
+    "C:\\Users\\Gomes\\source\\repos\\backend\\Backend.csproj": {}
   },
   "projects": {
-    "D:\\C#\\backend\\Backend.csproj": {
+    "C:\\Users\\Gomes\\source\\repos\\backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\backend\\Backend.csproj",
+        "projectUniqueName": "C:\\Users\\Gomes\\source\\repos\\backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "D:\\C#\\backend\\Backend.csproj",
+        "projectPath": "C:\\Users\\Gomes\\source\\repos\\backend\\Backend.csproj",
         "packagesPath": "C:\\Users\\Gomes\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\backend\\obj\\",
+        "outputPath": "C:\\Users\\Gomes\\source\\repos\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,6 +47,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[8.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.1.0, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",

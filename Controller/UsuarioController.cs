@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using Backend.Applications.DTO;
+using Backend.Applications.Queries;
 using Backend.Domain.Interfaces;
 using Backend.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Backend.Controller
@@ -12,30 +12,42 @@ namespace Backend.Controller
     [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {
+        private readonly IUsuarioQueries _usuarioQueries;
         private readonly IUsuarioRepository _usuarioRepository;
         private readonly IMapper _mapper;
 
-        public UsuarioController(IUsuarioRepository usuarioRepository, IMapper mapper)
+        public UsuarioController(IUsuarioQueries usuarioQueries, IUsuarioRepository usuarioRepository, IMapper mapper)
         {
+            _usuarioQueries = usuarioQueries;
             _usuarioRepository = usuarioRepository;
-            _mapper = mapper;
+             _mapper = mapper;
         }
 
         [HttpGet]
-
-        public async Task<IEnumerable<Usuarios>> GetUser()
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
+        public async Task<IActionResult> GetUser()
         {
-            return await _usuarioRepository.Get();
+            var usuarios = await _usuarioQueries.Get();
+
+            if (usuarios != null)
+            {
+                return Ok(usuarios);
+            }
+            else
+            {
+                return BadRequest();
+            }
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Usuarios>> GetOneUser(int id)
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
+        public async Task<IActionResult> GetOneUser(int id)
         {
-            var usuario = await _usuarioRepository.Get(id);
+            var usuario = await _usuarioQueries.Get(id);
 
             if (usuario != null)
             {
-                return usuario;
+                return Ok(usuario);
             }
             else
             {

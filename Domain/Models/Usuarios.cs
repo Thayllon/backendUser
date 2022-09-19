@@ -1,10 +1,28 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 
 namespace Backend.Domain.Models
 {
     public class Usuarios
     {
+        public Usuarios(string nome, string sobrenome, string email, DateTime dataNascimento, string escolaridade)
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+            Email = email;
+            DataNascimento = dataNascimento;
+            Escolaridade = escolaridade;
+        }
+
+        public Usuarios(int id, string nome, string sobrenome, string email, DateTime dataNascimento, string escolaridade)
+        {
+            Id = id;
+            Nome = nome;
+            Sobrenome = sobrenome;
+            Email = email;
+            DataNascimento = dataNascimento;
+            Escolaridade = escolaridade;
+        }
+
         public int Id { get; set; }
 
         //[Required(ErrorMessage = "Campo obrigatório")]
